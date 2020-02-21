@@ -1,0 +1,24 @@
+
+
+    /////////////////////////////////////
+    /// Compiling in the command line ///
+    /////////////////////////////////////
+     
+1) Tool execution example:
+        > To run JavaCC: javacc Parser.jj   //assuming that your javacc file is named Parser.jj
+        > To run JJTree: jjtree Parser.jjt  //assuming that your jjtree file is named Parser.jjt
+        
+2) Usual compilation flow (assuming jjtree file named Parser.jjt):
+        1) > jjtree Parser.jjt
+            * to compile the jjtree file
+            * This will generate a parser.jj file (possibly some .java files)
+        2) > javacc Parser.jj
+            * to compile the javacc file
+            * will generate the Parser.java file (depending on the name given to the parser inside parser.jj) and extra .java files
+        3) > javac *.java
+            * normal java compilation
+            * will generate .class files
+        4) > java Parser
+            * to execute the parser
+            * the tool will pause, expecting input from the user
+            

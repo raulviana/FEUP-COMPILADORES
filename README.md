@@ -25,7 +25,7 @@ The main parts of the project are **Syntactic error controller**, **Semantic ana
 
 To compile the program, run ``gradle build``. This will compile all classes to ``classes/main/java`` and copy the JAR file to the root directory. This JAR file will be created with the same name as the repository folder.
 
-## Usagea
+## Usage
 ```cmd
 java Jmm <filename> -debug(-ast/-semantic) and/or -error and -o
 

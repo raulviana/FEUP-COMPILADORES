@@ -1,0 +1,14 @@
+/*  REASON:
+    Variables names cannot be repeated within their context (there can be variables with the same name in the class and a method)
+*/
+
+class RepetitiveVars {
+    int b;
+    bool b;
+
+    public static void main(String[] a) {
+        int[] i;
+        bool i;
+        int a;
+    }
+}

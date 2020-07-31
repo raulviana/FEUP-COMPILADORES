@@ -1,0 +1,24 @@
+/*  REASON:
+    Not found function foo.
+    Not found class io.
+*/
+
+class T {
+    int ola;
+
+    public static void main(String[] a) {
+        io.println(10);
+        this.foo();
+
+    }
+
+    public int foo(boolean a, int b){
+                    int c;
+                    c=b;
+        return 1;
+    }
+
+    public int foo(boolean c, boolean d){
+        return 1;
+    }
+}

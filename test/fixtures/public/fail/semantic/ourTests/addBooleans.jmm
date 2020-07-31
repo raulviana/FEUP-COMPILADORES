@@ -1,0 +1,12 @@
+/*  REASON:
+    Cannot add booleans
+*/
+
+class AddBooleans {
+    public static void main(String[] a) { 
+        boolean b;
+
+        b = true + false;
+
+    }
+}

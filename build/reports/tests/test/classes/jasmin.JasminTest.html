@@ -1,0 +1,1340 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class jasmin.JasminTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class jasmin.JasminTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/jasmin.html">jasmin</a> &gt; JasminTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">16</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">2</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">10.078s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">87%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="testChild"></a>
+<h3 class="failures">testChild</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: There was a problem when executing the command [java, -cp, /tmp/jasmin-comp_raulviana/bd7dca16-74b4-43a4-95f1-9a18bcbf3318:./test/fixtures/libs/compiled, Child], please check the output
+	at jasmin.JasminUtils.runProcess(JasminUtils.java:115)
+	at jasmin.JasminUtils.testJasminBase(JasminUtils.java:182)
+	at jasmin.JasminUtils.testJmm(JasminUtils.java:54)
+	at jasmin.JasminUtils.testJmm(JasminUtils.java:44)
+	at jasmin.JasminTest.testChild(JasminTest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+<div class="test">
+<a name="testConstructors"></a>
+<h3 class="failures">testConstructors</h3>
+<span class="code">
+<pre>java.lang.RuntimeException: There was a problem when executing the command [java, -cp, /tmp/jasmin-comp_raulviana/f83e3a11-96b6-451c-9145-3e974338aedd:./test/fixtures/libs/compiled, Constructors], please check the output
+	at jasmin.JasminUtils.runProcess(JasminUtils.java:115)
+	at jasmin.JasminUtils.testJasminBase(JasminUtils.java:182)
+	at jasmin.JasminUtils.testJmm(JasminUtils.java:54)
+	at jasmin.JasminUtils.testJmm(JasminUtils.java:44)
+	at jasmin.JasminTest.testConstructors(JasminTest.java:90)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testArray</td>
+<td>0.442s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testChild</td>
+<td>0.285s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testConditional</td>
+<td>0.323s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testConstPropOpt</td>
+<td>0.269s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">testConstructors</td>
+<td>0.265s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="success">testExample</td>
+<td>1.451s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testFindMaximum</td>
+<td>0.271s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testGuessNumber</td>
+<td>1.585s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testHelloWorld</td>
+<td>0.253s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testMonteCarloPi</td>
+<td>0.494s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOverview</td>
+<td>0.333s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testQuickSort</td>
+<td>0.305s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSimple</td>
+<td>0.282s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSumDigits</td>
+<td>0.494s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testTicTacToe</td>
+<td>2.766s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testWhileAndIF</td>
+<td>0.260s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Jasmin code generated
+Downloading Jasmin to folder /tmp/jasmin-comp_raulviana
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/c8cf429d-ec3f-4555-92b2-a845479e1366/Example.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/c8cf429d-ec3f-4555-92b2-a845479e1366:./test/fixtures/libs/compiled Example
+Result: 10
+Program output:
+Result: 10
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/e090645d-64dd-4770-a2bc-43024d45f3bc/ArrayTest.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/e090645d-64dd-4770-a2bc-43024d45f3bc:./test/fixtures/libs/compiled ArrayTest
+Array length: 10
+Element 3: 3
+Element 3: 100
+---Array---
+Element 1: 1
+Element 2: 2
+Element 3: 100
+Element 4: 4
+Element 5: 5
+Element 6: 6
+Element 7: 7
+Element 8: 8
+Element 9: 9
+Element 10: 10
+---Array---
+Element 1: 20
+Element 2: 2
+Element 3: 100
+Element 4: 4
+Element 5: 5
+Element 6: 6
+Element 7: 7
+Element 8: 8
+Element 9: 9
+Element 10: 10
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 4
+Program output:
+Array length: 10
+Element 3: 3
+Element 3: 100
+---Array---
+Element 1: 1
+Element 2: 2
+Element 3: 100
+Element 4: 4
+Element 5: 5
+Element 6: 6
+Element 7: 7
+Element 8: 8
+Element 9: 9
+Element 10: 10
+---Array---
+Element 1: 20
+Element 2: 2
+Element 3: 100
+Element 4: 4
+Element 5: 5
+Element 6: 6
+Element 7: 7
+Element 8: 8
+Element 9: 9
+Element 10: 10
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 4
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/bd7dca16-74b4-43a4-95f1-9a18bcbf3318/Child.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/bd7dca16-74b4-43a4-95f1-9a18bcbf3318:./test/fixtures/libs/compiled Child
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/e9abb7f2-8bec-4536-ae54-e0b96b98f7b2/MonteCarloPi.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/e9abb7f2-8bec-4536-ae54-e0b96b98f7b2:./test/fixtures/libs/compiled MonteCarloPi
+Insert number: Result: 0
+Program output:
+Insert number: Result: 0
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/3a93a982-ecc5-4622-9f14-aba0a8bf4c95/ConstPropOpt.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/3a93a982-ecc5-4622-9f14-aba0a8bf4c95:./test/fixtures/libs/compiled ConstPropOpt
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+Program output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/f83e3a11-96b6-451c-9145-3e974338aedd/Constructors.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/f83e3a11-96b6-451c-9145-3e974338aedd:./test/fixtures/libs/compiled Constructors
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/36108557-fef2-4151-9a81-e1ff708791ec/GuessNumber.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/36108557-fef2-4151-9a81-e1ff708791ec:./test/fixtures/libs/compiled GuessNumber
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+You win!
+The number was 10
+It took you 5 tries
+Program output:
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+Your Guess is too low
+Guess a number between 1 and 1000: 
+You win!
+The number was 10
+It took you 5 tries
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/7e18502e-ffe1-46d6-af59-e1e6d8f440e4/TicTacToe.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/7e18502e-ffe1-46d6-af59-e1e6d8f440e4:./test/fixtures/libs/compiled TicTacToe
+
+0|0|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|0|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 2 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+0|1|0
+- - -
+0|0|0
+
+Player 2 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+2|1|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+2|1|0
+- - -
+0|0|1
+
+Congratulations, 1, you have won the game.
+Program output:
+
+0|0|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|0|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 2 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+0|0|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+0|1|0
+- - -
+0|0|0
+
+Player 2 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+2|1|0
+- - -
+0|0|0
+
+Player 1 turn! Enter the row(0-2):  Enter the column(0-2): 
+1|2|0
+- - -
+2|1|0
+- - -
+0|0|1
+
+Congratulations, 1, you have won the game.
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/38624cba-2fd1-4ac6-a0bc-4c3594292a8f/ConditionalTest.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/38624cba-2fd1-4ac6-a0bc-4c3594292a8f:./test/fixtures/libs/compiled ConditionalTest
+Test nº1 was successful
+Test nº2 was successful
+Test nº3 was successful
+Test nº4 was successful
+Test nº5 was successful
+Program output:
+Test nº1 was successful
+Test nº2 was successful
+Test nº3 was successful
+Test nº4 was successful
+Test nº5 was successful
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/dc8c7016-471e-4c86-a129-dcef9d8dfa39/WhileAndIF.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/dc8c7016-471e-4c86-a129-dcef9d8dfa39:./test/fixtures/libs/compiled WhileAndIF
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+Program output:
+10
+10
+10
+10
+10
+10
+10
+10
+10
+10
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/48d6cc17-8dc6-4658-bfd1-2f1133d6e4fc/SumDigits.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/48d6cc17-8dc6-4658-bfd1-2f1133d6e4fc:./test/fixtures/libs/compiled SumDigits
+Number to sum digits: 
+Number: 17654
+Sum of digits: 23
+Program output:
+Number to sum digits: 
+Number: 17654
+Sum of digits: 23
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/55e62fca-8fc4-44c1-944c-1dc2f6605d63/FindMaximum.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/55e62fca-8fc4-44c1-944c-1dc2f6605d63:./test/fixtures/libs/compiled FindMaximum
+Result: 28
+Program output:
+Result: 28
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/0c87894f-0e1f-4cac-b4a6-3ce6d305cde6/Overview.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/0c87894f-0e1f-4cac-b4a6-3ce6d305cde6:./test/fixtures/libs/compiled Overview
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 2
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 10
+Element 3: 0
+Element 4: 0
+Element 5: 8
+---Array---
+Element 1: 0
+Element 2: 10
+Element 3: 0
+Element 4: 0
+Element 5: 8
+Program output:
+---Array---
+Element 1: 0
+Element 2: 0
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 2
+Element 3: 0
+Element 4: 0
+Element 5: 0
+---Array---
+Element 1: 0
+Element 2: 10
+Element 3: 0
+Element 4: 0
+Element 5: 8
+---Array---
+Element 1: 0
+Element 2: 10
+Element 3: 0
+Element 4: 0
+Element 5: 8
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/51fe1467-0a7e-4ff1-acf7-42e53350e201/Simple.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/51fe1467-0a7e-4ff1-acf7-42e53350e201:./test/fixtures/libs/compiled Simple
+30
+Program output:
+30
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/f699b0e3-000d-45dc-b48d-6635566bff8f/QuickSort.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/f699b0e3-000d-45dc-b48d-6635566bff8f:./test/fixtures/libs/compiled QuickSort
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Program output:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+Jasmin code generated
+Jasmin:
+Generated: /tmp/jasmin-comp_raulviana/b98bc358-36b4-4f11-8615-4ff3d40ba9bb/HelloWorld.class
+
+Executing java -cp /tmp/jasmin-comp_raulviana/b98bc358-36b4-4f11-8615-4ff3d40ba9bb:./test/fixtures/libs/compiled HelloWorld
+Hello, World!
+Program output:
+Hello, World!
+
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>jun 07, 2020 10:07:45 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Downloading 'jasmin.zip' to '/tmp/jasmin-comp_raulviana'...
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/build.bat'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/build.sh'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/build.xml'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/changes.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/docs'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/about.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/guide.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/index.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/instructions.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/jasmin_icon.jpg'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/javavm.gif'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/style.css'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/docs/syntax.bnf'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/examples'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/ANewArray.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/AnInterface.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Arrays.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Catch.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Checkcast.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Count.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/HelloWeb.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/HelloWeb.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/HelloWorld.class'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/HelloWorld.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Implementor.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/InvokeInterface.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/MultiANewArray.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/MultiArrays.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/NewArray.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Switch.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/Uncaught.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/VerifyTest.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/examples/VerifyTest1.j'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/html2x'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/html2x/jasmin_icon.jpg'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/html2x/style.css'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/html2x/xt.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/jasmin.jar'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/ant-launcher.jar'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/ant.jar'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib/jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib/jas/examples'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/exprcomp.jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/exprcomp.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/hworld.jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/hworld.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/README'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/simple.jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/simple.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/examples/test.inp'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/JASMIN_NOTES.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/README.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib/jas/tests'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/tests/all.jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/tests/all.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/tests/README'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/tests/regress.class'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/jas/tests/scmregress.class'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib/java_cup'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup.jar'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/INSTALL'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/JASMIN_NOTES.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/java_cup.logo.new.gif'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/manual.html'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/README.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc/Main.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc/parser.cup'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc/parser.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc/scanner.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/simple_calc/sym.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/lib/java_cup/Thumbs.db'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/license-ant.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/license-jasmin.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/makefile'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/Readme.txt'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/src'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/src/jas'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/src/jasmin'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/Jasmin.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin.mf'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/ClassFile.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/InsnInfo.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/Main.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/num_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/parser.cup'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/parser.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/relative_num_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/ReservedWords.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/Scanner.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/ScannerUtils.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/sym.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jasmin/var_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Annotation.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/AnnotationAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/AnnotationElement.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/AnnotDefAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/AnnotParamAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/AsciiCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/CatchEntry.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Catchtable.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/ClassCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/ClassEnv.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/CodeAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/ConstAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/CP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/DeprecatedAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/DoubleCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/EnclosingMethodAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/ExceptAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/FieldCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/FloatCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/GenericAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/IincInsn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/InnerClass.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/InnerClassesAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Insn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/InsnOperand.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/IntegerCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/InterfaceCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/InvokeinterfaceInsn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/jasError.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Label.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LabelOrOffset.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LineTableAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LocalVarEntry.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LocalVarTableAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LocalVarTypeTableAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LongCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/LookupswitchInsn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Method.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/MethodCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/MultiarrayInsn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/NameTypeCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/RuntimeConstants.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/SignatureAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/SourceAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/SourceDebugExtensionAttr.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/StackMap.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/StringCP.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/TableswitchInsn.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/Var.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/VerificationTypeInfo.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/jas/VerifyFrame.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/src/java_cup'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup.mf'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/action_part.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/action_production.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/emit.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/internal_error.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lalr_item.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lalr_item_set.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lalr_state.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lalr_transition.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lexer.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/lr_item_core.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/Main.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/non_terminal.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parser.cup'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parser.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parse_action.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parse_action_row.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parse_action_table.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parse_reduce_row.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/parse_reduce_table.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/production.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/production_part.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/reduce_action.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Create folder '/tmp/jasmin-comp_raulviana/src/java_cup/runtime'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/char_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/double_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/float_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/int_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/long_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/lr_parser.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/str_token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/symbol.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/token.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/runtime/virtual_parse_stack.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/shift_action.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/sym.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/symbol.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/symbol_part.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/symbol_set.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/terminal.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/terminal_set.java'
+
+jun 07, 2020 10:07:46 DA MANHÃ pt.up.fe.specs.util.logging.TagLogger log
+INFO: Unzipping '/tmp/jasmin-comp_raulviana/src/java_cup/version.java'
+
+Error: LinkageError occurred while loading main class Child
+	java.lang.UnsupportedClassVersionError: Person has been compiled by a more recent version of the Java Runtime (class file version 57.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+Exception in thread &quot;main&quot; java.lang.UnsupportedClassVersionError: Person has been compiled by a more recent version of the Java Runtime (class file version 57.0), this version of the Java Runtime only recognizes class file versions up to 55.0
+	at java.base/java.lang.ClassLoader.defineClass1(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1016)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:174)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:802)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassOnClassPathOrNull(BuiltinClassLoader.java:700)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:623)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at Constructors.main(32679df2-b452-4661-b632-bd3605a501ad.j)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 4.4.1</a> at 07/06/2020, 10:07:56</p>
+</div>
+</div>
+</body>
+</html>

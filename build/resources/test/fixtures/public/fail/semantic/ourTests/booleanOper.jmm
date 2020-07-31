@@ -1,0 +1,22 @@
+/*  REASON:
+    Operation && only accepts booleans
+    a is not declared
+*/
+
+class BooleanOper {
+    public static void main(String[] a) { 
+        boolean b;
+        int c;
+        int d;
+
+        c = 1;
+        d = 1;
+
+        b = c && d;
+        b = c < d;
+    }
+
+    public int test() {
+         return a;
+    }
+}

@@ -1,0 +1,27 @@
+/* REASON:
+ERROR: Near line 14: non-static variable this cannot be referenced from a static context
+ERROR: Near line 15: a is not an array!
+ERROR: Near line 20: Operands are not of the same type
+ERROR: Near line 20: Negation can only be applied to a boolean
+ERROR: Near line 20: Return expression was expecting STRING but was given BOOLEAN
+ERROR: Near line 25: args is not an array!
+*/
+
+import static ioPlus.printHelloWorld(void) void;
+class HelloWorld {
+	public static void main(String[] args) {
+		String a;
+    	this.a;
+    	a[1] = 2;
+    	//this.insocket = insocket;
+	}
+
+	public String test(String args) {
+    		return !(args + 1);
+    }
+
+    public String test2(String args) {
+
+        	return args[1];
+       }
+}

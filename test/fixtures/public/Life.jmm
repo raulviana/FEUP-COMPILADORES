@@ -1,0 +1,375 @@
+import static io.read() int;
+import static io.println() void;
+import static io.print(int) void;
+class Life {
+
+    int UNDERPOP_LIM;
+    int OVERPOP_LIM;
+    int REPRODUCE_NUM;
+
+    int LOOPS_PER_MS;
+
+    int xMax;
+    int yMax;
+    int[] field_name;
+
+    public static void main(String[] a) {
+		Life l;
+		int unused;
+
+		l = new Life();
+		l.init();
+
+        while (true) {
+            l.printfield_name();
+            l.update();
+            unused = io.read();
+        }
+
+    }
+
+    public boolean init() {
+        int[] lineLenA;
+        int lineLen;
+
+        lineLenA = new int[1];
+
+        /* "Static" variables */
+        UNDERPOP_LIM = 2;
+        OVERPOP_LIM = 3;
+        REPRODUCE_NUM = 3;
+
+        LOOPS_PER_MS = 225000;
+
+        /* Instance variables */
+        field_name = this.field_name(lineLenA);
+        lineLen = lineLenA[0];
+
+        xMax = lineLen - 1;
+        yMax = field_name.length / lineLen - 1;
+
+        return true;
+    }
+
+    /* Change this! 
+     * (might want to write a script 
+     * to autogenerate every assignment...)
+     *
+     * lineLen is "pass by reference",
+     * and we modify it to return (e.g. time_t *time)
+     */
+    public int[] field_name(int[] lineLen) {
+        int[] field_name;
+
+        field_name = new int[100];
+        lineLen[0] = 10;
+
+        field_name[0] = 0;
+        field_name[1] = 0;
+        field_name[2] = 1;
+        field_name[3] = 0;
+        field_name[4] = 0;
+        field_name[5] = 0;
+        field_name[6] = 0;
+        field_name[7] = 0;
+        field_name[8] = 0;
+        field_name[9] = 0;
+        field_name[10] = 1;
+        field_name[11] = 0;
+        field_name[12] = 1;
+        field_name[13] = 0;
+        field_name[14] = 0;
+        field_name[15] = 0;
+        field_name[16] = 0;
+        field_name[17] = 0;
+        field_name[18] = 0;
+        field_name[19] = 0;
+        field_name[20] = 0;
+        field_name[21] = 1;
+        field_name[22] = 1;
+        field_name[23] = 0;
+        field_name[24] = 0;
+        field_name[25] = 0;
+        field_name[26] = 0;
+        field_name[27] = 0;
+        field_name[28] = 0;
+        field_name[29] = 0;
+        field_name[30] = 0;
+        field_name[31] = 0;
+        field_name[32] = 0;
+        field_name[33] = 0;
+        field_name[34] = 0;
+        field_name[35] = 0;
+        field_name[36] = 0;
+        field_name[37] = 0;
+        field_name[38] = 0;
+        field_name[39] = 0;
+        field_name[40] = 0;
+        field_name[41] = 0;
+        field_name[42] = 0;
+        field_name[43] = 0;
+        field_name[44] = 0;
+        field_name[45] = 0;
+        field_name[46] = 0;
+        field_name[47] = 0;
+        field_name[48] = 0;
+        field_name[49] = 0;
+        field_name[50] = 0;
+        field_name[51] = 0;
+        field_name[52] = 0;
+        field_name[53] = 0;
+        field_name[54] = 0;
+        field_name[55] = 0;
+        field_name[56] = 0;
+        field_name[57] = 0;
+        field_name[58] = 0;
+        field_name[59] = 0;
+        field_name[60] = 0;
+        field_name[61] = 0;
+        field_name[62] = 0;
+        field_name[63] = 0;
+        field_name[64] = 0;
+        field_name[65] = 0;
+        field_name[66] = 0;
+        field_name[67] = 0;
+        field_name[68] = 0;
+        field_name[69] = 0;
+        field_name[70] = 0;
+        field_name[71] = 0;
+        field_name[72] = 0;
+        field_name[73] = 0;
+        field_name[74] = 0;
+        field_name[75] = 0;
+        field_name[76] = 0;
+        field_name[77] = 0;
+        field_name[78] = 0;
+        field_name[79] = 0;
+        field_name[80] = 0;
+        field_name[81] = 0;
+        field_name[82] = 0;
+        field_name[83] = 0;
+        field_name[84] = 0;
+        field_name[85] = 0;
+        field_name[86] = 0;
+        field_name[87] = 0;
+        field_name[88] = 0;
+        field_name[89] = 0;
+        field_name[90] = 0;
+        field_name[91] = 0;
+        field_name[92] = 0;
+        field_name[93] = 0;
+        field_name[94] = 0;
+        field_name[95] = 0;
+        field_name[96] = 0;
+        field_name[97] = 0;
+        field_name[98] = 0;
+        field_name[99] = 0;
+
+        return field_name;
+
+    }
+
+    public boolean update() {
+        int i;
+        int cur;
+        int neighN;
+        boolean goodPop;
+        int[] newfield_name;
+
+        newfield_name = new int[field_name.length];
+
+        i = 0;
+        while (i < field_name.length) {
+            cur = field_name[i];
+            neighN = this.getLiveNeighborN(i);
+            
+
+            // Live cell
+            if (!(cur < 1)) {
+                goodPop = this.ge(neighN,UNDERPOP_LIM) && this.le(neighN,OVERPOP_LIM);
+                if (!goodPop) {
+                    newfield_name[i] = 0;
+                } else {
+                    newfield_name[i] = field_name[i];
+                }
+            }
+            // Dead cell
+            else {
+                if (this.eq(neighN,REPRODUCE_NUM)) {
+                    newfield_name[i] = 1;
+                } else {
+                    newfield_name[i] = field_name[i];
+                }
+            }
+
+            i = i + 1;
+        }
+
+        field_name = newfield_name;
+        return true;
+
+    }
+
+    public boolean printfield_name() {
+
+        int i;
+        int j;
+
+        i = 0;
+        j = 0;
+        while (i < field_name.length) {
+            if (this.gt(j,xMax)) {
+                io.println();
+                j = 0;
+            }
+            else {}
+            io.print(field_name[i]);
+
+            i = i + 1;
+            j = j + 1;
+        }
+
+        io.println();
+        io.println();
+        return true;
+
+    }
+
+    public int trIdx(int x, int y) {
+        return x + (xMax + 1) * y;
+    }
+
+    public int[] cartIdx(int absPos) {
+        int x;
+        int y;
+        int xLim;
+        int[] ret;
+
+        xLim = xMax + 1;
+
+        y = absPos / xLim;
+        x = absPos - y * xLim;
+
+        ret = new int[2];
+        ret[0] = x;
+        ret[1] = y;
+
+        return ret;
+
+    }
+
+    public int[] getNeighborCoords(int absPos) {
+        int x;
+        int y;
+
+        int upX;
+        int upY;
+        int downX;
+        int downY;
+
+        int[] cart;
+        int[] ret;
+
+        cart = this.cartIdx(absPos);
+        x = cart[0];
+        y = cart[1];
+
+        if (x < xMax) {
+            downX = x + 1;
+            if (this.gt(x,0))
+                upX = x - 1;
+            else
+                upX = xMax;
+        } else {
+            downX = 0;
+            upX = x - 1;
+        }
+
+        if (y < yMax) {
+            downY = y + 1;
+            if (this.gt(y,0))
+                upY = y - 1;
+            else
+                upY = yMax;
+        } else {
+            downY = 0;
+            upY = y - 1;
+        }
+
+        ret = new int[8];
+        // Clockwise from N
+        ret[0] = this.trIdx(x, upY);
+        ret[1] = this.trIdx(upX, upY);
+        ret[2] = this.trIdx(upX, y);
+        ret[3] = this.trIdx(upX, downY);
+        ret[4] = this.trIdx(x, downY);
+        ret[5] = this.trIdx(downX, downY);
+        ret[6] = this.trIdx(downX, y);
+        ret[7] = this.trIdx(downX, upY);
+
+        return ret;
+
+    }
+
+    public int getLiveNeighborN(int absPos) {
+        int[] neigh;
+        int i;
+        int ret;
+
+        ret = 0;
+
+        neigh = this.getNeighborCoords(absPos);
+
+        i = 0;
+        while (i < neigh.length) {
+            if (this.ne(field_name[neigh[i]],0))
+                ret = ret + 1;
+            else {
+            }
+
+            i = i + 1;
+        }
+
+        return ret;
+    }
+
+    public boolean busyWait(int ms) {
+        int i;
+        int n;
+        
+        n = ms * LOOPS_PER_MS;
+        
+        // Try optimizing this away!
+        i = 0;
+        while (i < n) {
+            i = i + 1;
+        }
+        
+        return true;
+    }
+    
+    public boolean eq(int a, int b) {
+		return (!this.lt(a, b) && !this.lt(b, a));
+	}
+	
+	public boolean ne(int a, int b) {
+		return (!this.eq(a, b));
+	}
+	
+    public boolean lt(int a, int b) {
+		return (a < b);
+    }
+    
+    public boolean le(int a, int b) {
+		return !(!this.lt(a, b) && !this.eq(a, b));
+    }
+    
+    public boolean gt(int a, int b) {
+		return (!this.le(a, b));
+    }
+    
+    public boolean ge(int a, int b) {
+		return !(!this.gt(a, b) && !this.eq(a, b));
+	}
+
+}

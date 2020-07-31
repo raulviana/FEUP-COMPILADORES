@@ -1,0 +1,53 @@
+import HelperClassGuessNumber(boolean, int);
+import HelperClassGuessNumber(boolean, int); //warning for this
+import HelperClassGuessNumber.getNumberToGuess(void) int;
+import HelperClassGuessNumber.getGuessedNumber(void) int;
+import HelperClassGuessNumber.printLowGuess(void) void;
+import HelperClassGuessNumber.highLowGuess(void) void;
+import HelperClassGuessNumber.printWon(int) void;
+import HelperClassGuessNumber.printLost(int) void;
+
+class GuessNumber {
+
+    public static void main(String[] args) {
+
+        HelperClassGuessNumber helperClass;
+        int numberOfTries;
+        int numberToGuess;
+        int maxTries;
+        int guess;
+        boolean stop;
+
+        helperClass = new HelperClassGuessNumber(false, 10);
+        numberOfTries = 0;
+        stop = false;
+        numberToGuess = helperClass.getNumberToGuess();
+        maxTries = 10;
+
+        while(!stop){
+
+            guess = helperClass.getGuessedNumber();
+            numberOfTries = numberOfTries + 1;
+
+            if(guess < numberToGuess) {
+                helperClass.printLowGuess();
+            } else if(!(guess < numberToGuess) && (numberToGuess < guess)) {
+                helperClass.highLowGuess();
+            } else {
+                stop = true;
+            }
+
+            if(maxTries < numberOfTries)
+                stop = true;
+            else {}
+
+        }
+
+        if(numberOfTries < maxTries)
+            helperClass.printWon(numberOfTries);
+        else
+            helperClass.printLost(numberOfTries);
+
+    }
+
+}

@@ -1,0 +1,121 @@
+import static io.println(int) void;
+import PrintArray();
+import PrintArray.printElement(int, int) void;
+import PrintArray.printLength(int) void;
+import PrintArray.printTitle() void;
+import PrintArray.printArray(int []) void;
+
+
+class ArrayTest{
+    int[] array;
+    int array_len;
+
+    public int[] get_array() {
+        return array;
+    } 
+
+    public int initialize_array(){
+        array = new int[10];
+        array_len = array.length();
+        return 0;
+    }
+
+    public boolean fill_array(){
+        array[0] = 1;
+        array[1] = 2;
+        array[2] = 3;
+        array[3] = 4;
+        array[4] = 5;
+        array[5] = 6;
+        array[6] = 7;
+        array[7] = 8;
+        array[8] = 9;
+        array[9] = 10;
+
+        return true;
+    }
+
+    public int print_length(){
+        PrintArray a;
+        int l;
+
+        a = new PrintArray();
+        l = array_len;
+        a.printLength(l);
+
+        return l;
+    }
+
+    public int setValue(int position, int value){
+        array[position] = value;
+        return 0;
+    }
+
+    //Test array position store and load
+    public int test_array_access(){
+        PrintArray a;
+        int third_element;
+
+        a = new PrintArray();
+        third_element = array[2];
+        a.printElement(3, third_element);
+
+        array[2] = 100;
+        third_element = array[2];
+        a.printElement(3, third_element);
+
+        return 0;
+    }
+
+    //Test array position load
+    public boolean print_array(){
+        PrintArray a;
+        int i;
+
+        a = new PrintArray();
+        i = 0;
+        
+        a.printTitle();
+
+        while(i < array_len){
+            a.printElement(i+1, array[i]);
+            i = i + 1;
+        }
+        return true;
+    }
+
+    public static void main(String[] args){
+        ArrayTest array;
+        PrintArray print;
+        int[] another_array;
+        int i;
+
+        array = new ArrayTest();
+        print = new PrintArray();
+        another_array = new int[5];
+        i=0;
+        
+        array.initialize_array();
+        array.fill_array();
+
+        //Length
+        array.print_length();
+
+        array.test_array_access();
+
+        array.print_array();
+        array.setValue(0,20);
+        array.print_array();
+
+        //Fill another_array with 0
+        while(i<another_array.length){
+            another_array[i] = 0;
+            i = i + 1;
+        }
+        print.printArray(another_array);
+
+        another_array[4] = 4;
+        print.printArray(another_array);
+                
+    }
+}

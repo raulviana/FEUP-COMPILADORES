@@ -1,0 +1,12 @@
+import Person();
+import Person.printInfo() void;
+
+class Child extends Person {
+     public static void main(String[] args) {
+        Child child;
+
+        child = new Child();
+
+        child.printInfo();
+     }
+}

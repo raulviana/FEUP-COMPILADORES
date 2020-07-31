@@ -1,0 +1,54 @@
+import static io.println(int) void;
+import PrintArray();
+import PrintArray.printElement(int, int) void;
+import PrintArray.printLength(int) void;
+import PrintArray.printTitle() void;
+import PrintArray.printArray(int []) void;
+
+
+class Overview{
+
+
+    public static void main(String[] args){
+        int[] array;
+        int i;
+        PrintArray print;
+        int len;
+
+        len = 4;
+        array = new int[5];
+        i=0;
+        print = new PrintArray();
+
+         while(i<array.length){
+            array[i] = 0;
+            i = i + 1;
+        }
+        print.printArray(array);
+
+        array[1] = 2;
+        print.printArray(array);
+
+        array[4] = 8;
+        i = 0;
+
+        while(i<array.length){
+            if(i < array[i]){
+                if(i < len){
+                      array[i] = 10;
+                }
+                else{}
+            }
+            else{}
+            i = i + 1;
+        }
+        print.printArray(array);
+        
+        i = 0;
+        while(array[i] < i){
+            array[i] = 9 + 1;
+            i = i + 1;
+        }
+        print.printArray(array);
+    }
+}

@@ -1,0 +1,33 @@
+import SumDigitsHelper();
+import SumDigitsHelper.readNumber(void) int;
+import SumDigitsHelper.countDigits(int) int;
+import SumDigitsHelper.getLastNumber(int) int;
+import SumDigitsHelper.printResult(int, int) void;
+
+class SumDigits {
+
+    public static void main(String[] args) {
+        SumDigitsHelper helper;
+        int initialNumber;
+        int number;
+        int counter;
+        int result;
+        int index;
+
+        index = 0;
+        result = 0;
+        helper = new SumDigitsHelper();
+        initialNumber = helper.readNumber();
+        number = initialNumber;
+        counter = helper.countDigits(number);
+
+        while(index < counter){
+            result = result + helper.getLastNumber(number);
+            number = number/10;
+            index = index + 1;
+        }
+
+        helper.printResult(result, initialNumber);
+        
+    }
+}

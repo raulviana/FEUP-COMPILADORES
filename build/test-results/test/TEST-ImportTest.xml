@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ImportTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-06-07T09:07:56" hostname="raul" time="0.006">
+  <properties/>
+  <testcase name="testImports" classname="ImportTest" time="0.006"/>
+  <system-out><![CDATA[Copied stream to file '/tmp/comp_jmm_test_raulviana/fixtures/public/ImportStressTest.jmm'.
+Jasmin code generated
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

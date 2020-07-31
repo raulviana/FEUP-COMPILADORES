@@ -1,0 +1,97 @@
+import static PrintTest.printTest(int, boolean) void;
+
+class ConditionalTest {
+
+    boolean booleanVar;
+
+    public boolean setBooleanVar(boolean booleanVar1) {
+
+        booleanVar = booleanVar1;
+
+        return true;
+
+    }
+
+    public boolean getBooleanVar() {
+
+        return booleanVar;
+    }
+
+    public static void main(String[] args){
+
+        ConditionalTest conditionalTest;
+        //Variables that hold if the tests have passed
+        boolean firstTest;
+        boolean secondTest;
+        boolean thirdTest;
+        boolean fourthTest;
+        boolean fifthTest;
+
+        conditionalTest = new ConditionalTest();
+        conditionalTest.setBooleanVar(true);
+
+        firstTest = false;
+
+        while(conditionalTest.getBooleanVar()){
+
+            conditionalTest.setBooleanVar(false);
+            firstTest = true;
+        }
+        PrintTest.printTest(1, firstTest);
+
+        if(!conditionalTest.getBooleanVar()){
+            secondTest = true;
+        } else {
+            secondTest = false;
+        }
+
+        PrintTest.printTest(2, secondTest);
+
+        if(secondTest) {
+            thirdTest = true;
+        } else {
+            thirdTest = false;
+        }
+
+        PrintTest.printTest(3, thirdTest);
+
+        if(firstTest) {
+
+            if(secondTest){
+
+                if(thirdTest) {
+
+                    fourthTest = true;
+
+                } else {
+
+                    fourthTest = false;
+
+                }
+
+            } else {
+
+                fourthTest = false;
+            }
+
+        } else {
+
+            fourthTest = false;
+
+        }
+
+        PrintTest.printTest(4, fourthTest);
+
+        if(firstTest && secondTest && thirdTest){
+            fifthTest = true;
+        } else {
+            fifthTest = false;
+        }
+
+        PrintTest.printTest(5, fifthTest);
+
+
+    }
+
+
+}

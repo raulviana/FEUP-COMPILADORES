@@ -1,0 +1,45 @@
+; <- this is a comment in jasmin
+.class public Simple
+.super java/lang/Object 
+;      ^ replace super if extends was used;standard initializer
+.method <init>()V
+	aload_0
+	invokenonvirtual java/lang/Object/<init>()V 
+	;                ^ replace if super is different
+	return
+.end method ; main will always have this header
+.method public static main([Ljava/lang/String;)V 
+	.limit stack 99 
+	.limit locals 99
+	; the calculation of these limit values are not required for CP2, but it is for CP3  	
+    ldc 30   ; this is not the most otimized instruction to load this value, you should select a better instruction (others are iconst_0->iconst_5, sipush, bipush,...)
+	istore 1 ; variable a is now considered as the local variable with index 1	
+    iconst_0
+	ldc 10
+	isub
+	istore 2 ; variable b	
+    ; a new instance requires the new instruction, followed by a dup and an invokespecial targeting the class constructor
+	new Simple
+	dup
+	invokespecial Simple/<init>()V
+	astore 3 ; variable simple	
+    ; invocation of a nonstatic method
+	aload 3
+	iload 1
+	iload 2
+	invokevirtual Simple/add(II)I
+	istore 4	; invocation of io.println
+	iload 4
+	invokestatic io/println(I)V
+	return
+.end method
+.method public add(II)I
+	.limit stack 99
+	.limit locals 99
+	iload 1 ; first argument 'a' is local variable 1
+	iload 2 ; second argument 'b' is local variable 2
+			; local variable 0 is 'this' object
+			; if the method were to be static, then 0 would not have 'this' but instead it would have 'a'
+	iadd
+	ireturn ; note that this return is different from the main (ireturn to return an integer, return for void)
+.end method

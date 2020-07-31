@@ -1,0 +1,16 @@
+import static io.println(int) void;
+
+class ConstPropOpt {
+    public static void main(String[] args){
+        int size;
+        int i;
+        i = 0;
+
+        size = 20;
+
+        while( i < size) {
+	        io.println(i);
+	        i=i+1;
+        }
+    }
+}

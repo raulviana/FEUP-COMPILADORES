@@ -1,0 +1,35 @@
+import Person(int, int);
+import Person.getId() int;
+import Person.getAge() int;
+import Person.setId(int) void;
+import Person.setAge(int) void;
+import Person.printInfo(void) void;
+
+class Constructors {
+
+    public static void main(String[] args){
+            int id;
+            int age;
+            Person person;
+
+            id = 15;
+            age = 20;
+
+            person = new Person(id, age);
+            person.printInfo();
+
+            while (person.getAge() < 25) {
+
+                if (person.getId() < 2) {
+                    person.setAge(person.getAge() + 1);
+                    person.printInfo();
+                }
+                else {
+                    person.setId(person.getId() - 3);
+                    person.printInfo();
+                }
+
+            }
+
+        }
+}

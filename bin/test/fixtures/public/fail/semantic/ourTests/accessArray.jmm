@@ -1,0 +1,15 @@
+/*  REASON:
+    Cannot access index of a non array
+*/
+
+class AccessArray {
+    public static void main(String[] a) { 
+        int b;
+        int c;
+
+        b = 1;
+
+        c = b[1];
+
+    }
+}

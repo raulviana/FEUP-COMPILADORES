@@ -1,0 +1,46 @@
+import static io.println(int) void;
+
+class Simple {
+
+    public int add(int a, int b){
+        int c;
+        c = a+b;
+        return c;
+    }
+
+    public static void main(String[] args){
+        int a;
+        int b;
+        int c;
+        Simple s;
+        a = 20;
+        b = 10;
+        s = new Simple();
+        c = s.add(a,b);
+        io.println(c);
+    }
+
+    public int test(int a, int b){
+        a = b + 10 * (3 + this.add(3,4));
+        return a;
+    }
+
+    public int test2(){
+        int result;
+        result = this.add(3,4);
+        return result;
+    }
+
+    public int ola() {
+        int i;
+        i = 0;
+
+        while(i < 2){
+            i = i + 1;
+        }
+
+        return 1;
+    }
+
+
+}

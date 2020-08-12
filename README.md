@@ -172,8 +172,8 @@ We feel that we made a good trade: larger functions for code reusability.
 
 * Cláudia Martins - Semantic Analysis, Code Generation, Parser.
 * Filipa Senra - Parser, Syntactic Errors, Semantic Analysis, Code Generation.
-* Ana Teresa - Code Generation.
-* Raul Viana - Code Generation.
+* Ana Teresa - Parser, Code Generation.
+* Raul Viana - Parser, Code Generation.
 
 ## Pros
 

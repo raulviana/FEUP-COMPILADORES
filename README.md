@@ -1,4 +1,4 @@
-# COMPILERS Project - Java Compiler
+# COMPILERS Project - Java Compiler [(**COMP**)](https://sigarra.up.pt/feup/pt/UCURR_GERAL.FICHA_UC_VIEW?pv_ocorrencia_id=436448)
 
 ## Group and Self-evaluation
 
